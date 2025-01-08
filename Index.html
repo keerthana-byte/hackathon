@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affordable Housing Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #9be15d, #00e3ae);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #38a169;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px 0;
+            background-color: #68d391;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #2f855a;
+        }
+
+        #search-bar {
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        #search-bar select, #search-bar button {
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #search-bar button {
+            background-color: #38a169;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #search-bar button:hover {
+            background-color: #2f855a;
+        }
+
+        #properties {
+            width: 90%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f0fff4;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .property {
+            text-align: center;
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .property img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #38a169;
+            color: white;
+            text-align: center;
+            padding: 8px 0;
+            margin-top: 10px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .feedback {
+            width: 90%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f0fff4;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .feedback form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .feedback form textarea,
+        .feedback form input,
+        .feedback form button {
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            max-width: 400px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .feedback form button {
+            background-color: #38a169;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .feedback form button:hover {
+            background-color: #2f855a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Affordable Housing Platform</h1>
+        <nav>
+            <ul>
+                <img src="https://cdn-icons-png.flaticon.com/512/1946/1946488.png" width="2%" height="2%" class="affordability Calculator">
+                <li><a href="index.html">Home</a></li>
+                <img src="https://c8.alamy.com/comp/2K9B8AB/home-affordability-calculator-blue-gradient-concept-icon-2K9B8AB.jpg" width="2%" height="2%" class="Crowdfunding">
+                <li><a href="affordability.html">Affordability Calculator</a></li>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcsnJtOk5KQ2nQIMdSpCw0YuB9r8Hb2L9ESg&s" width="2%" height="5%" class="funding">
+                <li><a href="crowdfunding.html">Crowdfunding Projects</a></li>
+                <img src="https://achieveatlanta.org/wp-content/uploads/ezgif-3-2082b6034f.jpg" width="2%" height="2%" class="resources">
+                <li><a href="resources.html">Housing Resources</a></li>
+                <img src="https://media.istockphoto.com/id/1271752802/photo/phone-and-e-mail-icons-on-wooden-cubes-with-contact-us-text-on-blue-background-web-page.jpg?s=612x612&w=0&k=20&c=dk9oPaDy_L9mv_icOMgsFGzEDrX0NUI3I8xBQ-DAxQM=" width="2%" height="2%" class="contact us">
+                <li><a href="contact.html">Contact Us</a></li>
+                <img src="https://lh4.googleusercontent.com/UJMyWgcCUBp2tPC4RW5xtu5fEqOFzK2lpa4Opzni4NpOf6yozBUtKvM-OUIguIox16A7cp41ZGt6B53byUx-VWnAU4K3geSP2W4uV1riDXABdEK4eZvrW_LrYqy3S3WbrLBacMhQ" width="2%" height="2%" class="assistance">
+                <li><a href="assistance.html">Assistance</a></li>
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Fhouse-rental_6231224&psig=AOvVaw1kNYUWA604fwCDSTYSGn7V&ust=1734821198206000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJi-huK2t4oDFQAAAAAdAAAAABAE" width="5%" height="5%" class="rentals">
+                <li><a href="rentals.html">Rentals</a></li>
+                <img src="https://cdn2.iconfinder.com/data/icons/miscellaneous-243-mix/168/pg_hostel_dorm_dormitory_paying_guest_building_residential_luggage-512.png" width="2%" height="2%"class="pg">
+                <li><a href="pg.html">PG's</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="search-bar">
+            <select id="location-filter">
+                <option value="">Select Location</option>
+                <option value="Shamshabad">Shamshabad</option>
+                <option value="Hyderabad City">Hyderabad City</option>
+            </select>
+            <button onclick="searchProperties()">Search</button>
+        </div>
+
+        <section id="properties">
+            <h2>Available Properties</h2>
+            <div class="property" data-location="Shamshabad">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAogMBIgACEQEDEQH/xAAbAAACAgMBAAAAAAAAAAAAAAAFBgAEAQIDB//EAEIQAAIBAwMBBgMGAwUFCQAAAAECAwAEEQUSITEGEyJBUWEUcZEjMoGhscFSctEVYoLh8AckM0LxFiU0U1SUorLC/8QAGAEAAwEBAAAAAAAAAAAAAAAAAQIDAAT/xAAjEQACAgICAgIDAQAAAAAAAAAAAQIRAzEhQRJRMmEicaET/9oADAMBAAIRAxEAPwD1rFZArIFbAV0EKMAVuFrKiqOrXYgiaNSN5Uk88ilcqGijXV9RTT7fjDTv9xfT3PtSLcXlyL+SZbiRJGwSysRmqmmavJq9u91Ku3xlAd+/O3io7bpiT5+Vc7m3KjoUEo2ENO7dTLtWWaOTLbQs67GJ9Af+tM9l2ssrhu6aKVJznCDkNxng15a84aaIahpy94JRtdBghs8H9POiUwRsq0ywAghpSSABg56VVtoRJM9Ds+0cc0jB1R1DYJhfcV9iKL215bXQ+wlDH+HofpXjEA0l2Hwl7c2sq8CWYeF/fK9KeexbTx3DTalewuFUiIr4t/vuGPp1oKQHEd8VMVUTVbEpuM6rjqG4I/CgupdpSdyWC7QOO8cc/gPKi5JAUW9DJxkDIyeg8zUK15y9zNLcrM0rmUch93IPzo9o/alXcwXzbmQ7WkUcr/MP3oKdhcGhnxU21Uk1bT42VWvIiX6bTnHzx0q6pDKGBBBGcinsWmabaxtrrisYrWCjltrG2u2KyFzWs1HDbUqx3Z9KlbyN4lUCtwKi1uBRAaSv3UEkg6opb6Ckq7nWS4uZy7mVrQlIz1RT1z7k449qP6/qQg7u0j5Z2w2PXBIH0GaUdSuoxDqvdookSEGaUnALbfu/IDH1qE5W6LwjSFvs13iaNCZhtkfLlSu0jPt61eY5PX8aCdnGVNEtVRlPgG7aQQDjB5FF4zlR7+tTS/JlG+AZbDVbREjuH+IG/DMVBG3PHTkHHrRGd1UHv1kaLB3d394j0FCu51W1aEQNvjEv2mTuGwnyB5FE7ghTmWMzRDlkBxuFWmSiDotV0q6jRZtMRIQPsntZCrqvvnhqMaXHp9vFLLa3ySow8YlJRlH8o4Pz8qER9pluIljvbC2uLUj7OFk2lB6Kav2w0MxGW2Msbx5c28vLHjopPWlQWX5v7RE85aWFrRwDbSADdGcDg+vma2gkkFvEssgkcKAzgY3HHJqjJa2v9oS3VvfN30kSGa0Y+WFAbb5cAfnWdP7lbSJbVt0Kjahznpx+uaSeykNBKJsyAetcm7oan442R+iupyHyuTn0PHy4rMB+1T513uBtmR5FVlUpjIwVJOMqfPqKMQSBty978WY7TiPAbfgBc56EmnPsLqd1cyyWc6OoiTLKV4Q+x8s+lJOsQq95G7TRwx7SHDZJY+w/15Vf0i8utOkSaOdZYUH2UyHy9MefyNNESR6zipiuGmXBu7GKdsbmHiA6Zq1T2JRptrZV5rcCs4FCzUTFSs1KASiooV2o1UaRpU9yN26KMykKQGwPTPmaMKKQ+3twWsL4HxiWSOCNfmyg083SFgrZxM9zPK8itky8jcPFEO74z77jn5GgmvXXeaRrYhREXu5FDMwG59pBJJ8un4VfPjlbuJMxl5O8OfvPuUcewAIoD2guGn7O6kI4jhgyxopyzZOCfxPNc8EdE2DNG+y0y3QIqHbkqpBAPnyODRqEZgUDrigOm+GxgG0rlA2D1Gef3o9F/wCGXnB2A59KZbFegTF/aVpIqN3hjLgHd4xjPqeRRS4OGBeIyoDzGDjd7UOl1C7tHtIyvxSzS7HYDBjH8RI4q/cSKpHfq5i/5ggySPaqTZOCpA+37XJcxGK5sbWe0P3bdhjYPQGidpJokkJaxBgkQmQW0+Tk46K2eP8AXFD4e0Gi3UK2t1o0TWacR7MB0Ht7/IiidjaaSYc6PcROUbvDb3Gd5A8lPUH35oILOVyNIkvYJSXg1L4cFUZvvJkjHoSMHpWbFoTABbACNWZcD1BOfzzUuzo80lo8ymDUTCTArN4iuT4c9DjJrWzkhdXWAABJCrYGBnzpZ7KQ0X4mxIp9GFWb954JGnXxwhBmIrkZB65HIyKor1FXNVmuoDFcQsGhSN+8j253nw7eeo6N9aEQz0UtehjlkhaWZoVRs+Fcl+OlbafCAHm0y43KV8UDjo3uPT3qa6kVzaRm4kaOPKvuTrnyFY0uGzllD2U0qTIOYicM3uD+1FCs9P7KSGXSF3Ahlcgg+Xn+9GQKXOxBdLKaGVtzKwJYnrxjP5CmWmJkqVKlYxKlSpWMVV615j2rZpraBLeVgbjUYiz5wRg8gfLbXpU7d3byv/Chb6CvKO07I91ogACRJcyTBScEhVb8+c0Mo2Iisk+yaLCREZVf8ZOfxwKA9ppVk7NXAEeyNigVW81JUg/jmi2WcrP4YdyJuUf8o2nj86Cdpp+70FRbEqDKqLkdRux0NCGgzfJVs17m1jjHOxQM0xQnECEDkRjj8KW7Zj3S7uu3mmRFHchWPG3B+lZGZWW8hlZe/hZWJxnbuGfmK7S5d1jUhSx4J8qr/wBnKpRo5GCgg7euec10vAjIQybyeNoHWnf0KvsqxaH2VmiW2j1GSC4Qkd9u8Ln8fCav23ZltMh7wQrqWZAweNtjgDz64PypZi7J6/HbrPBHHKpY+BXG4D5HGaK6Itzpqu2oXlxYOpA2rkq2T5igjMJXMOkXYspnlMV4is1usjBWYAnIx0PWuNo8H2iwbcq/2mP4veu19olvqaWt9HdgyWhYp3fKuMgkH06f5VXtoo4jIUUBpG3OcYJOMZP0pcmx8ZeBzRG/uJLe1gmiCHkb1bOCMHz8vLnmhami0tyttpkUrRmRcKpAxnnjzpY7GnoH6r3WoaMhYtFFMiPuAHgBwar6Va2EhVYLmV5kPCu2C/uD61dumtbvRnW0IEMkbKnhI29RjHtQzStGG3ab4TSIcmNcKQPY0VsW+D0jsQO5eaLcWyC3PUc559+abq887OXsOnXEk5kZkY4cSnBUkAc+/A60+NdQRxCSSVI1IzlzinEZ3qVWtL63vAxtpQ+04I6YqzWASpUqVjAzUm7vT52/uV5L2inVdZsJZwDJFaSz91yOSoGP2r1LtFI8WjXDRLulwNi+p8hXkWuTrF2yfxCV4NPwFxyWeRQD9TS5Nj49HS5WR++HGZgcjy+4B+tBe2E0cWn2on3eK4TGwjqATz9KJ3UkiRzAMyu7OwcHp4gB+WKDdroN0OnxxKTElweRk4UKQM5+dGOgS2aQnKA80yvk27ADJKdMe1LNucKopnd+7id8ZIXOK0dhloCQd7byIoDxeMeFSQMZ9OlFJ+8WRXixuU5XcMitV1CFtquHjLHADLkZzjqMjrWLhlZ1jkbajHDNnGKeTvonFV2Llv2u1S2nZpJ5kYnxIy+D5babdH7Rz6zFtudMhvYgOSuP0bj1rgsvZK/k7u9mhe4jbiTLDgYwN2MYoi+gxTwXB0fUApnYOSMELznjb0+lBILYK1nSNQuEspLAFPhp3LqHMbbSV6evQ8ZrS2hMdzPMW4l28emBjNa6zq9/olnabJVl3XLRSGbxZGOOcg+taW8k5v5kdMQCNdjep5z+gpZjYwkp4owggl0hVuWCxY8TE4A59aCKaL28RuNIeFerbh8jSR2UloytnDa6f3CHfFklc+hOaWdJ0nUN57w7VTnfH99R8qPadZS2tvdxzdWmaRecjB5/rS5Z3uqLqkkCmVHjYjLHCFckA8+RxTiDjbINk00U3xcmxUKtw2VJIBx0PJ/zrX42VpnV3U4Axzlh/rj862treaTE1z3Ks0TRuYcnOcYP5UNk4vAwiLbos98c+Lp1zz6/Sh0bsJyXNwkLPBJhtrYjDFS5GD1+tOnZbUprjTE7872RtpOc8cYpEjUzQugjD5684KgqwJH5Uzf7Psm0ngCPHjB2uec8j9qyZpDruHrUqv8ADy/+ZWKcQEdqXkXTkWHO9pl6fw4OfyNeSzPCnavU55MSMFt7dFHUHJOT+R/CvU+1zP3VskZwSxycZwOK8lt0g/tXVriYrue8VYvF5ohHl7FqlN8spBcHVJWEaMw3zO+1fL7z4X8OR9KXO17M8ulqOpLvx/hNHlXv9twdqltjcDPQ5H60E7TPH8fYb3IYB9uF4OSB61RaEezpbdVHuKZLuKSa2liik7p3Qqr4ztPrS3anxp/MP1pllcrG5BAIHBIzihEaQPisZ0ihEkgkZSu5+hOGBzVm8VO7YuMr6VxW9l8O5UOWAOMjqcV0cuZ49qb/ABgbc43c0z+xFXQtHsxcvE8tvLIIsnHex7h69RRPR4bXTfjZZ2kla3OEDNtyc4PQnFX7btutrLJbkWh2ysGQzFWBHBHI9vSi9tr+naq4jk0x5Cw6qqyLj58VkkZtnF9b0yCwE17E8EU03dkSL3gLFSfLPoaHCZPiO6TnK7wceWcVe1fQF1W2ktndoEW4EsTBQc4VgBj/ABflQ74URXQc+KRIzFuHTGefzFDIHG+S4rcUb0ds2jgHB3HnGccUAU9KNaE32Uw/vD9KmtlWbQXNxM80EsYBSNGDgYyGBzx7YNAf7egs9SeOa3EjL4XyeSPLFMytBuLRMGbbggN0GfT60Ilitpb23cpHE6h0eQgZfdgD6YFMxVYR094rqWG5sxNGu496jqQCCCB88EiqF/thu4BMHgkPh7pUZUJ55GcjBA8jjj3ououIBuLqVQrgjzBIzn8CcUM1NJY8GFo5YxKcllZWTOCRzwfPpW6F7O9myHd3m/aAG8HXhgaZf9nshS8ngeQu2GByCMENx+VKums3xChHCMQQGIzgkdcUxdlHeLX/ABFCJGP3Rz93zOfbFKhmeiVKlZqhMTu2TyG4tYYyRlSXPoOf6V5NpcQK397MSoe9lfDLjIwBn9a9Q7Y3DrqZWMgbbfc2fLB/oTXkGhwGXSO9DcSNcYOehZsftUnsrHQWtWimnVHKdyAwGeFP2ZIz+JFLvaXx63ar5LDuxn+9n9qPptJEaeIoMnb1AGAT+Ypd16b/AL7jj7tcdwDux4uSePlxVuiXZctP+NF/MP1pllXfGy5xkUtWR/3iIf3x+tF9aupbTS7m4t/+LGm5eM80qGZv8EqspDcAg9PQ5rtv2zRkYyHUj6ig8etrLLbQx96ZH2iQyRYAbjOCPLnir9w0invIgNynIzyKYU17PdmL1b3UryRbdo7mYkKWy33i3IIwOvrRCfTtSgt75IrPd3zSFShHQ7cdD7Glhu0vaKz1KGzS7tWe5xsCICg8hnIyDx60c0TtNrdxdXUV8LQpaBu8McLZO3GceL3oqgO+jlqU95pegzyR3M8c0ckZyxLFcg5HOeK4RSzz3VrNudo3iJl9CTjBPv1o8mtaasVxftO6IdpcyIQoycDFCbm+tpLlHhk3JcMTCVHB4z+HShMOM7qeKMaAeZx5kKR+f9aCKaLaE3+8SA+afvUkVei7JbA6mt14h9gYjkYH3i36tSt2h01X1iydZJNtwZElVVGBtUFcZ9zz8qZpr2Rb1bfulKs7LvDdMLkcedA9avpLG7iJtWkE0gjV88ByeB7ZpheuAvpXwdpbj4djuCFmV5G5wuT14zxVftE1iskvfb4pQQ+5GbEgAzkjpkYq3YX0t5aia6tEijkXr3hJwePTjz86mtPeNasbYJNbFVbmTlOvIHvxzRQGVbJwLmLdjG8A5GaO6TIkWt2zpAIgCpyQMnkDB5/SleGRl2kjxDGcetHpTKupxO2JCwbAwuDzkdfakGPWvxqVrE++NH/iUGsU5M8mv9TnfS5DduZJWhZnkY+WGA/+vWkDTJ5/+zcCg7d0BfCKB4mkPP8Ar1p21FxcaI9tbRM0r223d0wDnz/GlqOMW2lWsPh+ziUYznFc8HwjpaOtuxt7iUuneLKjrw2NuSuD/wDHpSxrOW7RZ8hbp+9EJtSmEzBI4yEA8TScfSh91PLPdb5XAG0eFWJUYroshVF+wObmL+df1o/eW8V3bSW84zHIMMM4yKW9Nlja6hCyoTvHAamGW6t4Tia4ijOM4dwv60UZg+Ds/YW08c0CyKyNuHjP581duCSNqnDE4BrHx9kw8N5bEeolX+tVbm6gYEx3cAcdPtFyDRAdLbsle3t7DefFwA27DKsGJPOetEIOzGpw3V60d1aYuA+QrHIDYxnK+1LC6pqkDN3faELk/wAUf6YxRHQtV1Wa/XvNXa5QhgyqE5IUkcqM/wDWipRFcXsIXGjTTWV1pTSRpP3SAvyVyNpqgmmNaLaQXDhpbQ9Uzhjtx5+xoeP9oN41ubg6fEwzg/aHJ/Kh9z2wurh2mW0Rc+QJNabTXBoWtjbnBolobYvMeTIehpNvdRv7a1gnJ3CRc4RRnpnAol2Pv7i51P7R5cNGcBxjBqRUcpLSNroXJLbg27BA9MfvQTtBE948UUTqndyrLk+RHypdj1fVd5Z72UDvShQN5A4qxf8Aez67aWss7Ks8eTg4PQ/5VvL0LwNQsbprKOFb1UDoCPD05zWmoW8UVtCkt48UqQqgCr4ZApBwT5Uv6HewWmn3U0t47JDMqM3QqemOPmKLXF7HcWSypYnUGaQxoCxyhOB7+dMmuwNeilZPH8PGI5C6BdoYnJbHHNHZpIDPa927ozOFdgo+80Y6Z9vzpVW8mjmaMQKFjH2kgJKJkeZA6e9MLSyGytxdCJGiXf3bDLZXgg+9I5J6GQ4QX5aGMrq90AVGBleOPlWKW116JVCyW2HAwwVeAfbmpSWNwKeq3V6bvTbXgIsrJuV1IVVxgk9OffrSxJcyjRJrxkARrjul3EE/d9OtO4sLdnMRdkfGQHLDPv1oK/wUV9JZatGInC7lkBOxl9ST0rRjCKpGllbdsE6gPgr2yjuIFUy92Sp2sCM+ePY13lZLPYpCBZ1G3Chh95hzjpRK80nQIljEsilMFkZHJA+hqxF2WsZIB3Du0eSQQSRzT+Kb2L/qCI7ZLPthLBsgk2wrhomVlGcHII4z5ceprTtDMkGrwTyBWEYiY5GcgPzRi07HQ2l3HcQSSd4nTcMiump9kl1KdZp5JAyrtG3jzoqKqgeTuwHq1/Da9szqxSBouG2xsrIMx7QOPc5oTqNzbX+vX14jrHBJM0gO3rk54FM47C2+zYZJyvpurZewtmCDmXP81KsaXf0O8jYsJKJJz8HMi5TxoYl3nA9GGCPYYpn7PJZ2CmZRtO4theFBK4PXyrabs5Z2a4kLkDxY2gn8P8q2jtBGh7vAhIy0jncoFQyTlF8MWrFc2tnCHtu8uWRnyGWPwr8yRVm0ktdKM8pndoZ4zETHGCwOQRxx5A0zWejQOC/dXJSQ5DlQm4euOuKILoWngMC8eFPiBceE+9VV+w/sV9VuD/2d0a7ADsJYy6r1xs5/OrGialFNrUXw0UkTmJVDOBgYY+fnw1H7yPRdNgaWeS2yq5C8En8KXB2ts4rbd8HsucYR4xgbvXkfjVeHoCso3gdri9jMcwzPJsKR7sHdwRj9KYJbSW41Ww1COOVzCpBAHluPt1waWB2mv2MSl8JCSWOB4+c5PqafdL7Q2N1FEr3bC4YDcojPgJ9eCBQdQRmq7BUGhYj1C1kFyEupVm4iJ2sH3Y4GPSrXw66VC3x0skaPcCZZGKod+QTxwOoz+1MqbbmMmG9JGcbo2UkH6UOvezdlfMDfGafHTvZM0VK0ChcludKS97mGWPc5Dyd7MdrD04PX+tZ1C8SXckFhmTP/ABI5ixA9cZ6e9MFt2V0aBy4sEZiOrMc/lijFrb29qgS2tYox6KD/AFpJRTDTYi/G3X/p3/8Ac4//AFWK9EyP4B+dZo+OP1/RfCXs81u5pbzXUikkKIiEqI+McCrHavSraKLTjmWRpH2bpHLFRweKxUqZKGmWdQ0yzlWASw72WQrvZ2LMBkDPPsKvaEDb3zWcbN8P3G8IT90+1YqUy2gv5DR8MnwZm8W4EefFBbi8eKfYqRke4qVKfJw+C+PlGzXkg2YVOfb2qxHOzlsqvDYqVKlbKtIRe12oTQ6iIY9oR58HrxnIOOfal6TV76bKSTnaoCqBwAOKlSnpNk1s00meaW+iVpZAAnkxonDFEZ93djd9/dk8kGs1Khn+ZDJ8ja5RZ5FaUbmPGW5OK6PpVmLt4e6GwMF/CpUrm8peOznt2Zj0603LB3Xhkl2Z3HKjnp9KZ9L0i0DpDsO1fCAOBj5Dg/SpUquF+Xy5O3EuBjtbWG1QrCgUVaXkgGsVK7Bns1bLY5x8qmT0NZqUEBm4QY6mpUqUQH//2Q==" class="property-image">
+                <h3> Apartments</h3>
+                <p>Price: 8000/month</p>
+                <p>Location: Shamshabad</p>
+            </div>
+            <div class="property" data-location="Hyderabad City">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXkOkhB7MV1d0I5-OU4xKluxA8aGXHsyualw&s"  class="property-image">
+                <h3>Individual Houses</h3>
+                <p>Price: 12000/month</p>
+                <p>Location: Hyderabad City</p>
+            </div>
+        </section>
+
+        <section class="feedback">
+            <h2>Feedback</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <textarea placeholder="Your Feedback" rows="4" required></textarea>
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Affordable Housing Platform. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function searchProperties() {
+            const selectedLocation = document.getElementById("location-filter").value;
+            const properties = document.querySelectorAll(".property");
+
+            properties.forEach(property => {
+                const location = property.dataset.location;
+                if (selectedLocation === "" || location === selectedLocation) {
+                    property.style.display = "block";
+                } else {
+                    property.style.display = "none";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
